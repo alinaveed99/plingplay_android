@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/list_invoices_tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Here"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_2" />
+
+    <TextView
+        android:id="@+id/list_invoices_tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_invoices_tvName"
+        android:text="Note here" />
+
+    <TextView
+        android:id="@+id/list_invoices_tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_invoices_tvNote"
+        android:text="Status here"
+        />
+
+    <TextView
+        android:id="@+id/list_invoices_tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/arrrow"
+        android:text="time here"
+
+        />
+
+    <TextView
+        android:id="@+id/list_invoices_tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_invoices_tvTimeStamp"
+        android:layout_toStartOf="@+id/arrrow"
+        android:text="200 USD" />
+
+    <ImageView
+        android:id="@+id/arrrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_right_arrow" />
+
+</RelativeLayout>

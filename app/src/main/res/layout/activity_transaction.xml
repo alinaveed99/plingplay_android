@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:id="@+id/activity_trans_all"
+            android:textColor="@color/colorTextBlue"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:id="@+id/activity_trans_name"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:id="@+id/activity_trans_amount"
+            android:textColor="@color/colorTextBlack"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:id="@+id/activity_trans_type"
+            android:textColor="@color/colorTextBlack"
+
+            />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_below="@+id/app_toolbar"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_trans_list"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_1"
+            android:text="Export As Email"
+            android:id="@+id/activity_welcome_btnLogin"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:layout_marginRight="1dp"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_1"
+            android:text="Export As PDF"
+            android:id="@+id/activity_trans_"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

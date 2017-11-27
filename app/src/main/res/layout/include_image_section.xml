@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/uploadImageOne"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ababab" />
+
+        <TextView
+            android:id="@+id/fragment_reg_uploadImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/uploadImageOne"
+            android:text="Upload Image"
+            android:textColor="@color/md_blue_900" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/uploadImageOne"
+            android:text="Take image while holding Id card" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/uploadImagetwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ababab" />
+
+        <TextView
+            android:id="@+id/fragment_reg_uploadImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/uploadImagetwo"
+            android:text="Upload Image"
+            android:textColor="@color/md_blue_900" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/uploadImagetwo"
+            android:text="Take image of utility bills" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/uploadImagethree"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ababab" />
+
+        <TextView
+            android:id="@+id/fragment_reg_uploadImage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/uploadImagethree"
+            android:text="Upload Image"
+            android:textColor="@color/md_blue_900" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/uploadImagethree"
+            android:text="Take Close up image of Id card" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

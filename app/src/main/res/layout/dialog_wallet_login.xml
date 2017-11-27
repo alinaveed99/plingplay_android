@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_cancel"
+        android:id="@+id/cancel"
+        />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/gap_1"
+        android:text="Wallet Login"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="25sp" />
+
+
+    <FrameLayout
+        android:id="@+id/line"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="@dimen/gap_1"
+        android:background="@drawable/line" />
+
+    <Spinner
+        android:id="@+id/dialog_wallet_login_AddressList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="@dimen/gap_1" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/dialog_wallet_login_tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_wallet_login_AddressList"
+        android:layout_marginTop="@dimen/field_spacing"
+        >
+
+        <EditText
+            android:id="@+id/dialog_wallet_login_etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wallet Password"
+            android:inputType="textPassword"
+
+            />
+        <!--android:text="@string/user_b_wallet_password"-->
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/dialog_wallet_login_ll"
+        android:layout_below="@+id/dialog_wallet_login_tilPassword"
+        android:layout_marginTop="@dimen/gap_1"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Wallet? "
+            android:textSize="@dimen/text_size_2"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Now"
+            android:textSize="@dimen/text_size_2"
+            android:textColor="@color/colorTextBlue"
+            android:id="@+id/dialog_wallet_login_tvCreate"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="@dimen/button_height_2"
+        android:layout_below="@+id/dialog_wallet_login_ll"
+        android:background="@drawable/buttonbg"
+        android:text="Open Wallet"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/gap_1"
+        android:layout_alignParentRight="true"
+        android:id="@+id/dialog_wallet_login_btnOpen"
+        />
+
+</RelativeLayout>

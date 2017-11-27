@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/main_drawer_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/main_drawer_contacts"
+            android:title="Contacts" />
+
+        <item
+            android:id="@+id/main_drawer_transaction"
+            android:title="Transaction"/>
+
+
+        <item
+            android:id="@+id/main_drawer_faq"
+            android:title="FAQs" />
+
+
+        <item
+            android:id="@+id/main_drawer_aboutus"
+            android:title="About Us" />
+
+
+        <item
+            android:id="@+id/main_drawer_inbox"
+            android:title="Inbox">
+
+            <menu>
+
+                <item
+                    android:id="@+id/main_drawer_invoices"
+                    android:title="Invoice Request" />
+
+                <!--<item-->
+                <!--android:id="@+id/main_drawer_recurring_invoice"-->
+                <!--android:title="Recurring Invoice" />-->
+
+            </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/main_drawer_Outbox"
+            android:title="Outbox">
+
+            <menu>
+
+                <item
+                    android:id="@+id/main_drawer_outbox_invoices"
+                    android:title="Invoice Request" />
+
+                <!--<item-->
+                <!--android:id="@+id/main_drawer_recurring_invoice"-->
+                <!--android:title="Recurring Invoice" />-->
+
+            </menu>
+
+        </item>
+
+
+        <item
+            android:id="@+id/main_drawer_lower"
+            android:title="Settings">
+
+            <menu>
+
+                <item
+                    android:id="@+id/main_drawer_setting"
+                    android:title="Account Settings" />
+
+                <item
+                    android:id="@+id/main_drawer_logout"
+                    android:title="Log Out" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+
+</menu>

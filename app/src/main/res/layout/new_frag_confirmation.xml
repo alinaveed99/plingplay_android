@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_confirm_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Payment"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_3" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_confirm_text1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_confirm_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:  "
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_1" />
+
+        <TextView
+            android:id="@+id/fragment_confirm_RecName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bruce Wayne"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_3" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount: "
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/fragment_confirm_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300000000"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/fragment_confirm_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" EUR"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_1" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/fragment_confirm_etPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:layout_margin="16dp"
+        android:hint="4 Digit Pin"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_confirm_etPin"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Your 4 digit Pin"
+            android:textColor="@color/colorTextBlack" />
+
+        <TextView
+            android:id="@+id/fragment_confirm_forgetPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Forgot ?"
+            android:textColor="@color/colorTextBlue"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/fragment_confirm_btnSign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_1"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:text="Sign"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/fragment_confirm_btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_1"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll5">
+
+        <EditText
+            android:id="@+id/fragment_confirm_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="top|left"
+            android:hint="Message"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="4"
+            android:maxLength="50"
+            android:maxLines="6" />
+
+        <TextView
+            android:id="@+id/fragment_confirmation_countLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="16dp"
+            android:text="0/50" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Pling Pay</string>
+
+
+    <!--<string name="user_b_email">khan@gmail.com</string>-->
+    <!--<string name="user_b_password">123456</string>-->
+    <!--<string name="user_b_wallet_password">Boje4qieboje@</string>-->
+
+    <!--<string name="user_b_email">martin.dalsenius@nordea.se</string>-->
+    <!--<string name="user_b_password">Boje5qie</string>-->
+    <!--<string name="user_b_wallet_password">Boje4qieboje4@</string>-->
+
+
+    <string name="agreement_text">Approval of Terms and Conditions</string>
+    <string name="agreement_text2">I am not a politically exposed person</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="App_des">Your payment bridge to the world</string>
+    <string name="Message">This option is not available in the beta version.
+        Wait for live version which will be ready in 2017</string>
+    <string name="change_wallet_address">Change Wallet and Address</string>
+
+
+    <string name="new_user_message">Thank you, we have received your application, final confirmation on your registration
+    along with user details will be send to your mail shortly. If you have not received any update for the next few days
+        please contact customer support.</string>
+    <string name="success_trans_msg">this is message</string>
+
+
+    <string name="service_down_error">"We are unable to process your transaction at this time. Press 'OK' if you want us to carry it out as soon as possible, within 4 days. Otherwise press 'Cancel'"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

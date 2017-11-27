@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="177dp"
+            android:layout_height="161dp"
+            android:src="@drawable/icon"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/fragment_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Your payment bridge to the world"
+            android:layout_marginBottom="@dimen/field_spacing"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/field_spacing"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:id="@+id/activity_create_wallet_etPassword"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email (Optional)"
+                android:id="@+id/activity_create_wallet_etEmail"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Private Key (Optional)"
+                android:id="@+id/activity_create_wallet_etprivateKey"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Label (Optional)"
+                android:id="@+id/activity_create_wallet_etLabel"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_1"
+        android:background="@drawable/buttonbg"
+        android:text="Create Wallet"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/activity_create_wallet_btnCreate"
+        />
+
+
+</RelativeLayout>

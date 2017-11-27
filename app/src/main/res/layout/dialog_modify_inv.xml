@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_cancel" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_1"
+            android:text="Modify Request"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="25sp"
+            android:layout_marginLeft="16dp"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/line"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="@dimen/gap_1"
+        android:background="@drawable/line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Amount"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:id="@+id/dialog_modify_inv_newAmount"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Currency"
+            android:id="@+id/dialog_modify_inv_currency"
+            />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:id="@+id/dialog_modify_inv_message"
+        />
+
+
+    <Button
+        android:id="@+id/dialog_modify_inv_btnSend"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/button_height_2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dialog_wallet_login_ll"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/gap_1"
+        android:background="@drawable/buttonbg"
+        android:text="Modify And Send"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:maxLength="100"
+        />
+
+
+</LinearLayout>

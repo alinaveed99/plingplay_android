@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_cancel"
+            android:id="@+id/cancel"
+            />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gap_1"
+            android:text="Choose Wallet Address"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/line"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="@dimen/gap_1"
+        android:background="@drawable/line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_address_list_recyclerView"
+        android:scrollbars="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="@dimen/button_height_2"
+        android:text="Cancel"
+        android:background="@drawable/buttonbg"
+        android:id="@+id/fragment_addr_list_btnCancel"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>

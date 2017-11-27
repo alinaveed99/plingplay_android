@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fragment_send_money_sendto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Send To: "
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fragment_send_money_ContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Lorem Ipsum"
+                android:textColor="@color/colorTextBlue"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/fragment_send_addReceiver"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_add_contact" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="Invoice       "-->
+                <!--android:textColor="@color/colorTextBlack"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/fragment_send_paymentMethodText"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/fragment_send_paymentMethod"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:text=">"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/colorTextBlue"-->
+                <!--/>-->
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_send_money_spMethods"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_3"
+                    android:inputType="numberDecimal"
+                    android:layout_gravity="center"
+                    android:hint="Amount"
+                    android:id="@+id/fragment_send_money_etAmount"
+                    />
+
+
+
+
+            <TextView
+                android:id="@+id/fragment_send_selectCurr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BTC"
+                android:textColor="@color/colorTextBlue"
+                android:textSize="@dimen/text_size_1"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="@string/App_des"
+            android:textSize="@dimen/text_size_2" />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_send_btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_1"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/buttonbg"
+        android:text="NEXT"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        >
+
+        <ImageView
+            android:id="@+id/list_currency_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:layout_centerVertical="true"
+            android:textColor="@color/md_black_1000"
+            android:id="@+id/list_currency_name"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/list_currency_icon"
+            android:layout_toStartOf="@+id/list_currency_name"
+            android:text="US Dollar"
+            android:layout_centerVertical="true"
+            android:textColor="@color/md_black_1000"
+            android:id="@+id/list_currency_nametext"
+            android:layout_marginLeft="5dp"
+            android:lines="2"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        android:layout_below="@id/rl"
+        />
+
+</RelativeLayout>

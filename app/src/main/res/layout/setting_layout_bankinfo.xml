@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#34c0ec"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Bank Info"
+                android:textColor="@color/md_white_1000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_currency_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/setting_field_padding"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/setting_exchange_progress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|center_vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exchange"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="@dimen/setting_text_size" />
+
+                <TextView
+                    android:id="@+id/setting_exchange_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/setting_field_spacing"
+                    android:text="" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_blue_grey_300" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_exchangeMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exchange Method"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_exchangeMethod_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_bankAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Account Number"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_bankAccountNumber_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_bankAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Account Address"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_bankAddress_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_bankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_bankName_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_bankAccountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Account Title"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_bankAccountTitle_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_bankRut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/setting_field_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUT"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/setting_text_size" />
+
+            <TextView
+                android:id="@+id/setting_bankRut_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/setting_field_spacing"
+                android:text="" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_300" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

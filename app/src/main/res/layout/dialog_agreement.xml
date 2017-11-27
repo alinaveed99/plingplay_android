@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have read and approved of the user agreement"
+        android:textColor="@color/md_black_1000"
+        android:maxLines="2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Agreement"
+        android:textColor="@color/md_blue_900"
+        android:maxLines="2"
+        android:layout_marginTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="italic"
+        android:id="@+id/dialog_agreement_link"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="gap_1">16dp</dimen>
+
+    <dimen name="button_height_1">50dp</dimen>
+    <dimen name="button_height_2">35dp</dimen>
+
+    <dimen name="field_spacing">8dp</dimen>
+
+    <dimen name="text_size_1">20sp</dimen>
+    <dimen name="text_size_2">17sp</dimen>
+    <dimen name="text_size_3">30sp</dimen>
+    <dimen name="text_size_4">25sp</dimen>
+
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="Text_size_header_1">25sp</dimen>
+
+    <dimen name="normal_text_size">15sp</dimen>
+    <dimen name="heading_three_textsize">20sp</dimen>
+    <dimen name="heading_fourth_textsize">18sp</dimen>
+    <dimen name="textsize_below_normal">12sp</dimen>
+    <dimen name="setting_text_size">17sp</dimen>
+    <dimen name="setting_field_padding">6dp</dimen>
+    <dimen name="setting_field_spacing">5dp</dimen>
+
+</resources>

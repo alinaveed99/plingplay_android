@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:layout_weight="1"
+            android:id="@+id/frag_trans_detail_payment"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Rec name"
+            android:layout_weight="1"
+            android:id="@+id/frag_trans_detail_RecName"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="1000 Euro"
+            android:layout_weight="1"
+            android:id="@+id/frag_trans_detail_Amount"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Delivery Status"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Success"
+            android:layout_weight="1"
+            android:id="@+id/frag_trans_detail_Status"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Charity"
+            android:layout_weight="1"
+            android:id="@+id/frag_trans_detail_Note"
+            android:textSize="@dimen/text_size_1"
+            android:textColor="@color/colorTextBlack"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="@dimen/button_height_2"
+            android:layout_below="@+id/dialog_wallet_login_ll"
+            android:background="@drawable/buttonbg"
+            android:text="Ecport As Email"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/gap_1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/frag_trans_btnEmail"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="@dimen/button_height_2"
+            android:layout_below="@+id/dialog_wallet_login_ll"
+            android:background="@drawable/buttonbg"
+            android:text="Export As Pdf"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/gap_1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/frag_trans_btnPdf"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

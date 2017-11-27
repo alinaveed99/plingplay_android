@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtLabl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/txtPerformTransectionSecondPass"
+            android:text="You can accept, deny or modify this request. "
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:id="@+id/brown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabl"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="User found. Please provide the required information to send Payment Request"
+                android:textColor="#01B7FF"
+                android:textSize="@dimen/textsize_below_normal"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/txtRequestTosendFirstName"
+                        android:text="From:"
+                        android:textSize="@dimen/textsize_below_normal"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/frag_detail_invoice_tvName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sarif"
+                        android:minHeight="20dp"
+                        android:paddingRight="5dp"
+                        android:textColorHint="#D1D1D1"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status:"
+                android:textSize="@dimen/textsize_below_normal"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/frag_detail_invoice_tvStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sarif"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:paddingRight="5dp"
+                android:singleLine="false"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:labelFor="@+id/frag_detail_invoice_tvSubject"
+                android:text="Subject:"
+                android:textSize="@dimen/textsize_below_normal"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/frag_detail_invoice_tvSubject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sarif"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:paddingRight="5dp"
+                android:singleLine="false"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:labelFor="@+id/frag_detail_invoice_tvSubject"
+                android:text="Amount:"
+                android:textSize="@dimen/textsize_below_normal"
+                android:textStyle="italic" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/frag_detail_invoice_tvCurrency"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#01B7FF"
+                        android:textSize="@dimen/normal_text_size" />
+
+                    <TextView
+                        android:id="@+id/frag_detail_invoice_tvAmount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="-"
+                        android:textColor="#01B7FF"
+                        android:textSize="@dimen/normal_text_size" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="BTC"
+                        android:textColor="#01B7FF"
+                        android:textSize="@dimen/normal_text_size" />
+
+                    <TextView
+                        android:id="@+id/frag_detail_invoice_tvBtc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="-"
+                        android:textColor="#01B7FF"
+                        android:textSize="@dimen/normal_text_size" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:labelFor="@+id/frag_detail_invoice_tvDetails"
+
+                android:text="Description:"
+                android:textSize="@dimen/textsize_below_normal"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/frag_detail_invoice_tvDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sarif"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:textCursorDrawable="@null" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtLabl2nd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brown"
+            android:layout_margin="10dp"
+            android:labelFor="@+id/txtPerformTransectionSecondPass"
+            android:text="'Modify and Reply' can be used to view messages and reply to this request with modefied contents"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="normal" />
+
+
+        <Button
+            android:id="@+id/frag_detail_invoice_btnModify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height_2"
+            android:background="@drawable/buttonbg"
+            android:layout_below="@+id/txtLabl2nd"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Modify and Reply"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size" />
+
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height_2"
+            android:background="@drawable/buttonbg"
+            android:layout_below="@+id/txtLabl2nd"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Modify and Reply"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_welcome_buttons"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_1"
+            android:text="Deny"
+            android:id="@+id/frag_detail_invoice_btnDeny"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:layout_marginRight="1dp"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_1"
+            android:background="@drawable/buttonbg"
+            android:text="Accept"
+            android:id="@+id/frag_detail_invoice_btnAccept"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:text="sf43113ff53gkol019ih"
+        android:textSize="12sp"
+        android:id="@+id/spinner_wallet_guid"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Label : "
+        android:textSize="12sp"
+        android:id="@+id/spinner_wallet_lab"
+        android:layout_below="@+id/spinner_wallet_guid"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Label not set"
+        android:textSize="12sp"
+        android:id="@+id/spinner_wallet_label"
+        android:layout_below="@+id/spinner_wallet_guid"
+        android:layout_toRightOf="@+id/spinner_wallet_lab"
+        />
+
+</RelativeLayout>
